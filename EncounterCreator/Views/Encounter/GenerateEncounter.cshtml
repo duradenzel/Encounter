@@ -1,0 +1,138 @@
+﻿@using System.Linq
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party</title>
+    <link rel="stylesheet" src="~/css/encounter.css" type="text/css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Party</h1>
+            <form class="encounter-form" method="post" action="@Url.Action("GenerateEncounter", "Encounter")">
+                
+                <div class="encounter-party">
+                    <div class="encounter-input-group">
+                        <label for="partySize">Players:</label>
+                        <input type="number" name="partySize" id="partySize" required><br>
+                    </div>
+                    <div class="seperator">X</div>
+                    <div class="encounter-input-group">
+                        <label for="playerLevel">Level:</label>
+                        <input type="number" name="playerLevel" id="playerLevel" required><br>
+
+                    </div>
+                </div>
+
+                <div class="encounter-difficulty">
+                    <select name="difficulty" id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                        <option value="deadly">Deadly</option>
+                    </select>
+
+                    <button type="submit">Generate Encounter</button>
+                </div>
+
+            </form>
+            
+            <div class="encounter-output">
+                @if (Model?.Monsters != null && Model.Monsters.Count > 0)
+                {
+
+                    var monsterQuantities = new Dictionary<string, int>();
+
+                    <div class="encounter-summary">
+                        <h2>EXP Goals</h2>
+                        <ul class="encounter-exp">
+                            @foreach (var xpSum in Model.XpSums)
+                            {
+                                <li>@xpSum.Key: @xpSum.Value</li>
+                            }
+                        </ul>
+
+                    </div>
+                    <h1>Monsters List</h1>
+
+                    <ul class="monster-list">
+
+                        @foreach (var monster in Model.Monsters)
+                        {
+                            if (monsterQuantities.ContainsKey(monster.Name))
+                            {
+                                monsterQuantities[monster.Name]++;
+                            }
+                            else
+                            {
+                                monsterQuantities.Add(monster.Name, 1);
+                            }
+
+
+                            <div class="monster">
+                                <div class="monster-details">
+                                    <h2 class="monster-name">@monster.Name</h2>
+                                    <p class="monster-type">@monster.Size @monster.Type</p>
+                                </div>
+                                <div class="monster-info">
+                                    <p class="monster-cr-exp">CR: <span id="monster-cr">@monster.CR</span> | Exp: <span id="monster-exp">@monster.ExperiencePoints</span></p>
+                                    <div class="monster-quantity">
+                                        <button class="quantity-increase">+</button>
+                                        <input type="number" class="quantity-input" value="@monsterQuantities[monster.Name]">
+                                        <button class="quantity-decrease">-</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }
+                    </ul>
+                <div>
+                    
+                        <p>Total Exp: <span id="exp-total">@Model.TotalExp</span></p>
+                    <p>Adjusted Exp: @Model.AdjustedExp</p>
+                </div>
+                }
+
+            </div>
+        
+        </div>
+        <div class="center">
+            <input type="text" id="search" onkeyup="Search()" placeholder="Search for names..">
+
+            <table id="monster-table" class="table table-responsive table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">CR</th>
+                        <th scope="col">Type</th>
+                    </tr>
+                </thead>
+                <tbody id="monster-list-body">
+                    
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button id="prev-page"> &larr; Previous</button>
+                <ul id="pagination-list">
+                    <!-- Page numbers and buttons will be added here -->
+                </ul>
+                <button id="next-page">Next &rarr;</button>
+            </div>
+        </div>
+        <div class="right"></div>
+
+    </div>
+    
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/Encounter.js"></script>
+<script src="/js/MonsterTable.js"></script>
+
+
+</html>
+

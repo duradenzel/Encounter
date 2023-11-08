@@ -1,0 +1,45 @@
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\refint\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterInterfaces\obj\Debug\net6.0\ref\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\refint\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterInterfaces\obj\Debug\net6.0\ref\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\refint\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterInterfaces\obj\Debug\net6.0\ref\EncounterInterfaces.dll

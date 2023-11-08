@@ -1,0 +1,51 @@
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterDAL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\refint\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterDAL\obj\Debug\net6.0\ref\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterDAL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\refint\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterDAL\obj\Debug\net6.0\ref\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterDAL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\refint\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterDAL\obj\Debug\net6.0\ref\EncounterDAL.dll

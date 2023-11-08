@@ -1,0 +1,57 @@
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterBLL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\refint\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\ref\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterBLL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterBLL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\refint\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterBLL\obj\Debug\net6.0\ref\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterBLL.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterDAL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterDAL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterInterfaces.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.csproj.CopyComplete
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\refint\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\EncounterBLL.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterBLL\obj\Debug\net6.0\ref\EncounterBLL.dll

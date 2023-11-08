@@ -1,0 +1,34 @@
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\bin\Debug\net6.0\EncounterModels.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.csproj.AssemblyReference.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\refint\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Software\Trainingen\EncounterModels\obj\Debug\net6.0\ref\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\bin\Debug\net6.0\EncounterModels.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\refint\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Fontys\Semester 2 deel 2\Manifest\EncounterModels\obj\Debug\net6.0\ref\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\bin\Debug\net6.0\EncounterModels.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\bin\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\bin\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfoInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.AssemblyInfo.cs
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.csproj.CoreCompileInputs.cache
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\refint\EncounterModels.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\EncounterModels.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\EncounterModels\obj\Debug\net6.0\ref\EncounterModels.dll

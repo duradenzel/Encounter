@@ -1,0 +1,194 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
+        "projectName": "EncounterDAL",
+        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
+        "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj": {
+                "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj"
+              },
+              "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
+                "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj",
+        "projectName": "EncounterInterfaces",
+        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj",
+        "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
+                "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
+        "projectName": "EncounterModels",
+        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
+        "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
