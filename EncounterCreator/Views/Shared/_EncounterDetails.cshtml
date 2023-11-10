@@ -1,0 +1,52 @@
+@model EncounterModels.EncounterResult  
+
+@if (Model?.Monsters != null && Model.Monsters.Count > 0)
+{
+    var monsterQuantities = new Dictionary<string, int>();
+
+    <div class="encounter-summary">
+        <h2>EXP Goals</h2>
+        <ul class="encounter-exp">
+            @foreach (var xpSum in Model.XpSums)
+            {
+                <li>@xpSum.Key: @xpSum.Value</li>
+            }
+        </ul>
+    </div>
+    
+    <h1>Monsters List</h1>
+
+    <ul class="monster-list">
+        @foreach (var monster in Model.Monsters)
+        {
+            if (monsterQuantities.ContainsKey(monster.Name))
+            {
+                monsterQuantities[monster.Name]++;
+            }
+            else
+            {
+                monsterQuantities.Add(monster.Name, 1);
+            }
+
+            <div class="monster">
+                <div class="monster-details">
+                    <h2 class="monster-name">@monster.Name</h2>
+                    <p class="monster-type">@monster.Size @monster.Type</p>
+                </div>
+                <div class="monster-info">
+                    <p class="monster-cr-exp">CR: <span id="monster-cr">@monster.CR</span> | Exp: <span id="monster-exp">@monster.ExperiencePoints</span></p>
+                    <div class="monster-quantity">
+                        <button class="quantity-increase">+</button>
+                        <input type="number" class="quantity-input" value="@monsterQuantities[monster.Name]">
+                        <button class="quantity-decrease">-</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </ul>
+    
+    <div>
+        <p>Total Exp: <span id="exp-total">@Model.TotalExp</span></p>
+        <p>Adjusted Exp: @Model.AdjustedExp</p>
+    </div>
+}

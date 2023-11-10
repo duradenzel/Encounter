@@ -8,7 +8,7 @@ namespace EncounterCreator.Controllers
     public class EncounterController : Controller
     {
         private readonly IEncounterService _encounterService;
-        public EncounterResult Encounter {get; set;}
+        public EncounterResult Encounter = new();
 
         public EncounterController(IEncounterService encounterService)
         {
@@ -31,28 +31,18 @@ namespace EncounterCreator.Controllers
             return monsterList;
         }
 
-        public ActionResult SaveEncounter(EncounterResult encounter)
+     
+
+        public ActionResult AddMonsterToEncounter(Monster monster)
         {
-
-            if (ModelState.IsValid)
-            {
             
-                
-            }
-
-        
-            return View("GenerateEncounter", encounter);
-        }
-    
-        public ActionResult AddMonsterToEncounter(Monster monster){
-
-            Monster m = monster;
-
             Encounter.Monsters.Add(monster);
+            Encounter.TotalExp += monster.ExperiencePoints; 
+            
 
-            return View("GenerateEncounter", Encounter);
-
+            return PartialView("_EncounterDetails", Encounter);
         }
+
     
     }
 }

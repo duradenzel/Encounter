@@ -45,7 +45,6 @@ function displayMonsterList(monsters) {
         tableRow.appendChild(row);
         var btns = row.querySelectorAll(".add-monster");
         for (const b of btns) {
-            console.log(b);
             b.addEventListener("click",(e)=>{GetRowMonster(e.target)});
         }
     }
@@ -71,7 +70,9 @@ function GetRowMonster(row) {
         data: JSON.stringify(monster),
         contentType: 'application/json',
         success: function (data) {
-            console.log('Success');
+            console.log(data);
+          
+
         },
         error: function (error) {
             console.error('Error');
