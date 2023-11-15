@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 
 // Register your services here.
 builder.Services.AddMemoryCache();
+builder.Services.AddHttpClient();
 
 
 builder.Services.AddScoped<IEncounterService, EncounterService>();

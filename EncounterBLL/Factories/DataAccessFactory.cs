@@ -9,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace EncounterBLL.Factories
 {
-    public class DataAccessFactory : IDataAccessFactory
+    public class DataAccessFactory
     {
         private readonly IMemoryCache _memoryCache;
 

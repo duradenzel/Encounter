@@ -2,19 +2,21 @@
 using EncounterBLL;
 using EncounterInterfaces;
 using EncounterModels;
+using EncounterBLL.Factories;
 
 public class EncounterService : IEncounterService
 {
-    private readonly IDataAccessFactory _dataAccessFactory;
+    private readonly DataAccessFactory _dataAccessFactory;
     private readonly IMonsterApiService _monsterApiService;
 
-    public EncounterService(IDataAccessFactory dataAccessFactory)
+    
+    public EncounterService(DataAccessFactory dataAccessFactory)
     {
         _dataAccessFactory = dataAccessFactory;
         _monsterApiService = _dataAccessFactory.CreateApi();
     }
 
-    public async Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty)
+    public async Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty, HttpClient _httpClient)
     {
         int[] playerLevels = Enumerable.Repeat(playerLevel, partySize).ToArray();
 
@@ -42,7 +44,7 @@ public class EncounterService : IEncounterService
         Dictionary<string, int> xpSums = CalculateAllXpSums(xpThresholds);
 
 
-        List<Monster> selectedMonsters = await _monsterApiService.GetMonsters(desiredXpValue);
+        List<Monster> selectedMonsters = await _monsterApiService.GetMonsters(desiredXpValue, _httpClient);
 
         int adjustedXpValue = CalculateAdjustedXpValue(selectedMonsters.Sum(monster => monster.ExperiencePoints), selectedMonsters.Count);
 
@@ -163,9 +165,9 @@ public class EncounterService : IEncounterService
     }
 
 
-    public async Task<List<Monster>> GetMonsterList()
+    public async Task<List<Monster>> GetMonsterList(HttpClient _httpClient)
     {
-        List<Monster> monsterList = await _monsterApiService.GetMonsterList();
+        List<Monster> monsterList = await _monsterApiService.GetMonsterList(_httpClient);
         return monsterList;
     }
 

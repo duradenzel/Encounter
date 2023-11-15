@@ -11,9 +11,9 @@ namespace EncounterInterfaces
     public interface IEncounterService
     {
         
-        Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty);
+        Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty, HttpClient _httpClient);
 
-        Task<List<Monster>> GetMonsterList();
+        Task<List<Monster>> GetMonsterList(HttpClient _httpClient);
 
     }
 }

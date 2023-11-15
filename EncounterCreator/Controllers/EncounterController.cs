@@ -8,26 +8,34 @@ namespace EncounterCreator.Controllers
     public class EncounterController : Controller
     {
         private readonly IEncounterService _encounterService;
+
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        private readonly HttpClient _httpClient;
         public EncounterResult Encounter = new();
 
-        public EncounterController(IEncounterService encounterService)
+        public EncounterController(IEncounterService encounterService, IHttpClientFactory httpClientFactory)
         {
             _encounterService = encounterService;
+            _httpClientFactory = httpClientFactory;
+
+            _httpClient = _httpClientFactory.CreateClient();
         }
 
         public IActionResult Index() { return View("GenerateEncounter"); }
 
         [HttpPost]
         public async Task<IActionResult> GenerateEncounter(int partySize, int playerLevel, string difficulty = "easy")
-        {                 
-            Encounter = await _encounterService.GenerateEncounter(partySize, playerLevel, difficulty);
+        {
+
+            Encounter = await _encounterService.GenerateEncounter(partySize, playerLevel, difficulty, _httpClient);
             
             return View("GenerateEncounter",Encounter);
 
         }
 
         public async Task<List<Monster>> GetMonsterList() {
-            List<Monster> monsterList = await _encounterService.GetMonsterList();
+            List<Monster> monsterList = await _encounterService.GetMonsterList(_httpClient);
             return monsterList;
         }
 

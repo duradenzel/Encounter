@@ -23,7 +23,7 @@ namespace EncounterDAL
             this.memoryCache = memoryCache;
         }
 
-        public async Task<List<Monster>> GetMonsters(int desiredXpValue)
+        public async Task<List<Monster>> GetMonsters(int desiredXpValue, HttpClient _httpClient)
         {
          
             if (memoryCache.TryGetValue("AllMonsters", out List<Monster> allMonsters))
@@ -31,7 +31,7 @@ namespace EncounterDAL
                 return SelectMonsters(allMonsters, desiredXpValue);
             }
 
-            HttpResponseMessage response = await client.GetAsync(baseUrl);
+            HttpResponseMessage response = await _httpClient.GetAsync(baseUrl);
             if (response.IsSuccessStatusCode)
             {
                 string jsondata = await response.Content.ReadAsStringAsync();
@@ -50,7 +50,7 @@ namespace EncounterDAL
             return null;
         }
 
-        public async Task<List<Monster>> GetMonsterList()
+        public async Task<List<Monster>> GetMonsterList(HttpClient _httpclient)
         {
 
             if (memoryCache.TryGetValue("AllMonsters", out List<Monster> allMonsters))
@@ -58,7 +58,7 @@ namespace EncounterDAL
                 return allMonsters;
             }
 
-            HttpResponseMessage response = await client.GetAsync(baseUrl);
+            HttpResponseMessage response = await _httpclient.GetAsync(baseUrl);
             if (response.IsSuccessStatusCode)
             {
                 string jsondata = await response.Content.ReadAsStringAsync();
