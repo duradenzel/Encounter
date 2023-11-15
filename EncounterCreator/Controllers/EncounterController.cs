@@ -18,7 +18,6 @@ namespace EncounterCreator.Controllers
         {
             _encounterService = encounterService;
             _httpClientFactory = httpClientFactory;
-
             _httpClient = _httpClientFactory.CreateClient();
         }
 

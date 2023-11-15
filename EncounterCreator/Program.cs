@@ -13,9 +13,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient();
 
 
-builder.Services.AddScoped<IEncounterService, EncounterService>();
 builder.Services.AddScoped<IMonsterApiService, MonsterApi>();
-builder.Services.AddScoped<IDataAccessFactory, DataAccessFactory>();
 
 
 var app = builder.Build();
