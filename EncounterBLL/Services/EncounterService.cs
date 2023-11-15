@@ -4,7 +4,7 @@ using EncounterInterfaces;
 using EncounterModels;
 using EncounterBLL.Factories;
 
-public class EncounterService : IEncounterService
+public class EncounterService
 {
     private readonly DataAccessFactory _dataAccessFactory;
     private readonly IMonsterApiService _monsterApiService;

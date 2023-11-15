@@ -7,14 +7,14 @@ namespace EncounterCreator.Controllers
 {
     public class EncounterController : Controller
     {
-        private readonly IEncounterService _encounterService;
-
+        private readonly EncounterService _encounterService;
         private readonly IHttpClientFactory _httpClientFactory;
 
         private readonly HttpClient _httpClient;
         public EncounterResult Encounter = new();
 
-        public EncounterController(IEncounterService encounterService, IHttpClientFactory httpClientFactory)
+
+        public EncounterController(EncounterService encounterService, IHttpClientFactory httpClientFactory)
         {
             _encounterService = encounterService;
             _httpClientFactory = httpClientFactory;
