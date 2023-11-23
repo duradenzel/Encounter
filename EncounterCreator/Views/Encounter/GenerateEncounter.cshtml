@@ -40,7 +40,7 @@
             </form>
             
             <div class="encounter-output">
-                @Html.Partial("_EncounterDetails", (EncounterModels.EncounterResult)Model)
+                @Html.Partial("_EncounterDetails")
             </div>
         
         </div>
@@ -62,9 +62,7 @@
             </table>
             <div class="pagination">
                 <button id="prev-page"> &larr; Previous</button>
-                <ul id="pagination-list">
-                    <!-- Page numbers and buttons will be added here -->
-                </ul>
+                <ul id="pagination-list"></ul>
                 <button id="next-page">Next &rarr;</button>
             </div>
         </div>

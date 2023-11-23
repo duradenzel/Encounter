@@ -9,9 +9,11 @@ public class EncounterService
     private readonly DataAccessFactory _dataAccessFactory;
     private readonly IMonsterApiService _monsterApiService;
 
+private readonly HttpClient _httpClient;
     
-    public EncounterService(DataAccessFactory dataAccessFactory)
+    public EncounterService(DataAccessFactory dataAccessFactory, HttpClient httpClient)
     {
+        _httpClient = httpClient;
         _dataAccessFactory = dataAccessFactory;
         _monsterApiService = _dataAccessFactory.CreateApi();
     }
@@ -169,6 +171,20 @@ public class EncounterService
     {
         List<Monster> monsterList = await _monsterApiService.GetMonsterList(_httpClient);
         return monsterList;
+    }
+
+     public async Task SaveEncounter(List<Monster> monsters)
+    {
+        try
+        {
+        
+            //await _encounterRepository.SaveMonsters(monsters);
+        }
+        catch (Exception ex)
+        {
+            // Log or handle the exception as needed
+            throw new ApplicationException($"Error saving monsters: {ex.Message}", ex);
+        }
     }
 
 }

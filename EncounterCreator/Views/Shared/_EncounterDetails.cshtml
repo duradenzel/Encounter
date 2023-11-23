@@ -1,4 +1,4 @@
-@model EncounterModels.EncounterResult  
+
 
 @if (Model?.Monsters != null && Model.Monsters.Count > 0)
 {
@@ -48,5 +48,6 @@
     <div>
         <p>Total Exp: <span id="exp-total">@Model.TotalExp</span></p>
         <p>Adjusted Exp: @Model.AdjustedExp</p>
+        <button class="btn button" onclick="SaveEncounter()">Save Encounter</button>
     </div>
 }
