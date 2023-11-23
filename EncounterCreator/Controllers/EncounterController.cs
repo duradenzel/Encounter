@@ -47,17 +47,15 @@ namespace EncounterCreator.Controllers
         [HttpPost]  
         public async Task<IActionResult> SaveEncounter([FromBody] EncounterResult encounterResult)
         {
-            try
+            var saveResult = await _encounterService.SaveEncounterData(encounterResult);
+
+            if (saveResult)
             {
-                _encounterService.SaveEncounterData(encounterResult);
                 return Ok(new { Message = "Encounter saved successfully." });
             }
-            catch (Exception ex)
+            else
             {
-                
-                Console.WriteLine($"An error occurred while saving the encounter. Exception message: {ex.Message}");
-
-                return StatusCode(500, new { Message = "An error occurred while saving the encounter." });
+                return StatusCode(500, new { Message = "EncounterController: An error occurred while saving the encounter." });
             }
         }
 

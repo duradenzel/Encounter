@@ -9,13 +9,15 @@ public class EncounterService
     private readonly DataAccessFactory _dataAccessFactory;
     private readonly IMonsterApiService _monsterApiService;
 
+    private readonly IEncounterRepository _encounterRepository;
 private readonly HttpClient _httpClient;
     
     public EncounterService(DataAccessFactory dataAccessFactory, HttpClient httpClient)
     {
         _httpClient = httpClient;
         _dataAccessFactory = dataAccessFactory;
-        _monsterApiService = _dataAccessFactory.CreateApi();
+        _monsterApiService = _dataAccessFactory.GetAPI();
+        _encounterRepository = _dataAccessFactory.GetEncounterRepository();
     }
 
     public async Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty, HttpClient _httpClient)
@@ -174,9 +176,19 @@ private readonly HttpClient _httpClient;
         return monsterList;
     }
 
-     public async Task SaveEncounterData(EncounterResult encounterResult)
+     public async Task<bool> SaveEncounterData(EncounterResult encounterResult)
     {
-      
+        try
+        {
+            await _encounterRepository.SaveEncounter(encounterResult);
+            return true; 
+        }
+        catch (Exception ex)
+        {
+            
+            Console.WriteLine($"EncounterService: An error occurred while saving the encounter. Exception message: {ex.Message}");
+            return false; 
+        }
     }
 
 }

@@ -17,10 +17,15 @@ namespace EncounterBLL.Factories
             _memoryCache = memoryCache;
         }
 
-        public IMonsterApiService CreateApi()
+        public IMonsterApiService GetAPI()
         {
             MonsterApi monsterApi = new(_memoryCache);
             return monsterApi;
+        }
+
+        public IEncounterRepository GetEncounterRepository(){
+            EncounterRespository encounterRespository = new();
+            return encounterRespository;
         }
     }
 }
