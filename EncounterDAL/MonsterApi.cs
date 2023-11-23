@@ -66,6 +66,13 @@ namespace EncounterDAL
                 if (apiResponse != null && apiResponse.Results != null)
                 {
                     allMonsters = apiResponse.Results;
+                    foreach (var monster in allMonsters)
+                {
+                    if (ExpMapper.CRToExpMap.TryGetValue(monster.CR, out int expValue) && expValue > 0)
+                    {
+                        monster.ExperiencePoints = expValue;
+                    }
+                }
 
 
                     memoryCache.Set("AllMonsters", allMonsters, TimeSpan.FromHours(24));

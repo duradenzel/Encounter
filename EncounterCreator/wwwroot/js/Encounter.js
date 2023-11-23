@@ -1,29 +1,31 @@
 ﻿$(document).ready(function () {
-    $('.quantity-increase').click(function () {
+       
+       $(document).on('click', '.quantity-increase', function () {
         var input = $(this).siblings('.quantity-input');
         input.val(parseInt(input.val()) + 1);
         UpdateExp(this.parentElement.parentElement, "increase");
     });
 
-    $('.quantity-decrease').click(function () {
+    
+    $(document).on('click', '.quantity-decrease', function () {
         var input = $(this).siblings('.quantity-input');
         if (parseInt(input.val()) > 1) {
             input.val(parseInt(input.val()) - 1);
-        }
-        else if (parseInt(input.val()) == 1) {
-            this.parentElement.parentElement.parentElement.remove()
+        } else if (parseInt(input.val()) === 1) {
+            this.parentElement.parentElement.parentElement.remove();
         }
         UpdateExp(this.parentElement.parentElement, "decrease");
     });
+
 
 
     loadMonsterList();
 });
 
 
-
-
 function UpdateExp(data, type) {
+
+
 
     var exp = data.children[0].children[1].textContent;
     var totalexp = document.getElementById('exp-total');
@@ -38,40 +40,54 @@ function UpdateExp(data, type) {
 }
 
 function SaveEncounter() {
-    // Create an array to store the monsters
     var monsters = [];
 
-    // Iterate through each monster in the encounter
     $('.monster').each(function () {
         var monsterName = $(this).find('.monster-name').text();
-        var monsterQuantity = parseInt($(this).find('.quantity-input').val());
+        var monsterSizeType = $(this).find('.monster-type').text().split(' ');
+        var monsterSize = monsterSizeType[0];
+        var monsterType = monsterSizeType[1];
+        var monsterCR = $(this).find('.monster-cr-exp #monster-cr').text();
+        var monsterExp = $(this).find('.monster-cr-exp #monster-exp').text();
 
-        // Add the monster to the array as a nested object
-        monsters.push({
-            Name: monsterName,
-            Quantity: monsterQuantity
-        });
+        var monsterQuantity = parseInt($(this).find('.quantity-input').val()) || 1;
+
+        for (var i = 0; i < monsterQuantity; i++) {
+            var monster = {
+                Name: monsterName,
+                Size: monsterSize,
+                Type: monsterType,
+                CR: monsterCR,
+                ExperiencePoints: monsterExp
+            };
+            monsters.push(monster);
+        }
     });
 
-    // Create an object to send to the controller
     var encounterData = {
         Monsters: monsters,
-        // Add any other data you want to send
+        Difficulty: $('#encounter-difficulty').text(), 
+        TotalExp: parseInt($('#exp-total').text()) || 0,
+        AdjustedExp: parseInt($('#exp-adjusted').text()) || 0,
+        XpSums: null
     };
 
-    // Use jQuery AJAX to send the data to the controller
+    console.log(encounterData);
+    var encounterResult = JSON.stringify(encounterData);
+
     $.ajax({
         type: 'POST',
-        url: '/Encounter/SaveEncounter', // Replace with your controller and action names
+        url: '/Encounter/SaveEncounter',
         contentType: 'application/json',
-        data: JSON.stringify(encounterData),
-        success: function (data) {
-            // Handle the success response
-            console.log('Encounter saved successfully!');
+        data: encounterResult,
+        success: function (response) {
+            console.log(response);
+            // Handle success
         },
         error: function (error) {
-            // Handle the error response
-            console.error('Error saving encounter:', error);
+            console.error(error);
+            // Handle error
         }
     });
 }
+

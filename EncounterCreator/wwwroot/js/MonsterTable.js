@@ -41,7 +41,7 @@ function displayMonsterList(monsters) {
 
     for (const i of monsters) {
         var row = document.createElement('tr');
-        row.innerHTML = `<th scope='row'><button class='add-monster' data-name='${i.name}' data-cr='${i.cr}' data-type='${i.type}'>Add</button></th><td>${i.name}</td><td>${i.cr}</td><td>${i.type}</td>`;
+        row.innerHTML = `<th scope='row'><button class='add-monster' data-name='${i.name}' data-cr='${i.cr}' data-type='${i.type}' data-size='${i.size}' data-exp='${i.experiencePoints}'>Add</button></th><td>${i.name}</td><td>${i.cr}</td><td>${i.type}</td><td>${i.size}</td><td>${i.experiencePoints}</td>`;
         tableRow.appendChild(row);
         var btns = row.querySelectorAll(".add-monster");
         for (const b of btns) {
@@ -55,30 +55,38 @@ function GetRowMonster(row) {
       const name = row.getAttribute('data-name');
       const cr = row.getAttribute('data-cr');
       const type = row.getAttribute('data-type');
+      const size = row.getAttribute('data-size');
+      const exp = row.getAttribute('data-exp');
   
       const monster = {
           Name: name,
-          Cr: cr,
-          Type: type
+          CR: cr,
+          Type: type,
+          Size: size,
+          Exp: exp
       };
   
-   
-
-      $.ajax({
-        url: '/Encounter?handler=AddMonsterToEncounter',
-        type: 'POST',
-        data: JSON.stringify(monster),
-        contentType: 'application/json',
-        success: function (data) {
-            console.log(data);
-          
-
-        },
-        error: function (error) {
-            console.error('Error');
-        }
-    });
-     
+      var monsterBlock = document.createElement('div');
+      monsterBlock.classList.add('monster');
+  
+      monsterBlock.innerHTML = `
+          <div class="monster-details">
+              <h2 class="monster-name">${monster.Name}</h2>
+              <p class="monster-type">${monster.Size} ${monster.Type}</p>
+          </div>
+          <div class="monster-info">
+              <p class="monster-cr-exp">CR: <span id="monster-cr">${monster.CR}</span> | Exp: <span id="monster-exp">${monster.Exp}</span></p>
+              <div class="monster-quantity">
+                  <button class="quantity-increase">+</button>
+                  <input type="number" class="quantity-input" value="1">
+                  <button class="quantity-decrease">-</button>
+              </div>
+          </div>
+      `;
+  
+      document.getElementById('monster-list').appendChild(monsterBlock);
+      UpdateExp(monsterBlock.children[1], 'increase');
+  
 }
 
 

@@ -14,7 +14,7 @@ namespace EncounterModels
         public int TotalExp { get; set; }
         public int AdjustedExp { get; set; }
 
-        public Dictionary<string, int> XpSums { get; set; }
+        public Dictionary<string, int>? XpSums { get; set; }
 
 
 

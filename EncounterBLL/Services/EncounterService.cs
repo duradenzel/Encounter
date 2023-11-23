@@ -54,6 +54,7 @@ private readonly HttpClient _httpClient;
         EncounterResult result = new EncounterResult
         {
             Monsters = selectedMonsters,
+            Difficulty = difficulty,
             TotalExp = selectedMonsters.Sum(monster => monster.ExperiencePoints),
             XpSums = xpSums,
             AdjustedExp = adjustedXpValue
@@ -173,18 +174,9 @@ private readonly HttpClient _httpClient;
         return monsterList;
     }
 
-     public async Task SaveEncounter(List<Monster> monsters)
+     public async Task SaveEncounterData(EncounterResult encounterResult)
     {
-        try
-        {
-        
-            //await _encounterRepository.SaveMonsters(monsters);
-        }
-        catch (Exception ex)
-        {
-            // Log or handle the exception as needed
-            throw new ApplicationException($"Error saving monsters: {ex.Message}", ex);
-        }
+      
     }
 
 }

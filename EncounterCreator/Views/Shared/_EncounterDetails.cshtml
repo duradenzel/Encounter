@@ -1,10 +1,11 @@
-
+@model EncounterModels.EncounterResult 
 
 @if (Model?.Monsters != null && Model.Monsters.Count > 0)
 {
     var monsterQuantities = new Dictionary<string, int>();
 
     <div class="encounter-summary">
+        <h1>Chosen Difficulty: <span id="encounter-difficulty">@Model.Difficulty</span></h1>
         <h2>EXP Goals</h2>
         <ul class="encounter-exp">
             @foreach (var xpSum in Model.XpSums)
@@ -16,7 +17,7 @@
     
     <h1>Monsters List</h1>
 
-    <ul class="monster-list">
+    <ul id="monster-list" class="monster-list">
         @foreach (var monster in Model.Monsters)
         {
             if (monsterQuantities.ContainsKey(monster.Name))
@@ -47,7 +48,7 @@
     
     <div>
         <p>Total Exp: <span id="exp-total">@Model.TotalExp</span></p>
-        <p>Adjusted Exp: @Model.AdjustedExp</p>
+        <p>Adjusted Exp: <span id="exp-adjusted">@Model.AdjustedExp</span></p>
         <button class="btn button" onclick="SaveEncounter()">Save Encounter</button>
     </div>
 }
