@@ -94,7 +94,6 @@ namespace EncounterDAL
 
             while (currentXpValue < desiredXpValue)
             {
-                // Shuffle the list of monsters for each iteration.
                 allMonsters = allMonsters.OrderBy(x => random.Next()).ToList();
 
                 foreach (var monster in allMonsters)

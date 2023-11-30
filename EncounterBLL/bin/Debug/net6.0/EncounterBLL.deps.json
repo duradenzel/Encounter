@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "EncounterBLL/1.0.0": {
         "dependencies": {
+          "ApiDAL": "1.0.0",
           "EncounterDAL": "1.0.0",
           "EncounterInterfaces": "1.0.0",
           "EncounterModels": "1.0.0",
@@ -481,6 +482,15 @@
           }
         }
       },
+      "ApiDAL/1.0.0": {
+        "dependencies": {
+          "EncounterInterfaces": "1.0.0",
+          "EncounterModels": "1.0.0"
+        },
+        "runtime": {
+          "ApiDAL.dll": {}
+        }
+      },
       "EncounterDAL/1.0.0": {
         "dependencies": {
           "EncounterInterfaces": "1.0.0",
@@ -828,6 +838,11 @@
       "sha512": "sha512-Idgg+mJEyAujqDPzA3APy9dNoyw0YQcNA65GgYjktDRtJ+nvx/hv+J+m6Eax3JJMGEYGy04oc5YNP6ZvQ3Y1vQ==",
       "path": "zstdsharp.port/0.7.1",
       "hashPath": "zstdsharp.port.0.7.1.nupkg.sha512"
+    },
+    "ApiDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "EncounterDAL/1.0.0": {
       "type": "project",

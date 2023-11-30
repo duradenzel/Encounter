@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\ApiDAL\\ApiDAL.csproj": {}
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\Testing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\ApiDAL\\ApiDAL.csproj": {
+    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\ApiDAL\\ApiDAL.csproj",
-        "projectName": "ApiDAL",
-        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\ApiDAL\\ApiDAL.csproj",
+        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\Testing.csproj",
+        "projectName": "Testing",
+        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\Testing.csproj",
         "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\ApiDAL\\obj\\",
+        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.7.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
