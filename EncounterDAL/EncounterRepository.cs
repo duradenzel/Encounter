@@ -96,7 +96,7 @@ namespace EncounterDAL
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while saving the encounter. Exception message: {ex.Message}");
+                Console.WriteLine($"EncounterRepository catch: An error occurred while saving the encounter. Exception message: {ex.Message}");
                 return false;
             }
         }

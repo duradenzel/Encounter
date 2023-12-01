@@ -45,7 +45,7 @@ namespace EncounterCreator.Controllers
 
       
 
-      //TODO: Fix bug: CR value cannot float (cr 0.5 , 0.25 etc). gives null reference when passed from view
+      //TODO: Fix bug: CR value cannot be a float value (cr 0.25 , 0.5 etc). gives null reference when passed from view
         [HttpPost]  
         public async Task<IActionResult> SaveEncounter([FromBody] EncounterResult encounterResult)
         {

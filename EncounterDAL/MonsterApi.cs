@@ -10,16 +10,12 @@ namespace EncounterDAL
 {
     public class MonsterApi : IMonsterApiService
     {
-        private readonly HttpClient client;
+        
         private readonly string baseUrl = "https://api.open5e.com/monsters/?limit=500";
         private readonly IMemoryCache memoryCache;
 
         public MonsterApi(IMemoryCache memoryCache)
-        {
-            client = new HttpClient();
-            client.BaseAddress = new Uri(baseUrl);
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        {    
             this.memoryCache = memoryCache;
         }
 

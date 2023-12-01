@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7xY8uCIF/0+q7/JjxR8Xxqosv10KWQ4V+Tr5tfqB5euOWjkQ6ZRlarbLJBckqmKlzYhCNzl5zHP6nmwOkumpkw==",
+  "dgSpecHash": "ecrqG5iWgmv+4NBHMuXZwsEUxNZT1i5uk+CIer2y4XOlIfjlmLePeMCv7W2VsUcqkPzQKJOL2n++mDAp5mSBaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\Testing\\Testing.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,12 @@
     "C:\\Users\\Huijb\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.5\\k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
     "C:\\Users\\Huijb\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
     "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
-    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.net.test.sdk\\17.7.1\\microsoft.net.test.sdk.17.7.1.nupkg.sha512",
     "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Huijb\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
