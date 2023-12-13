@@ -138,3 +138,15 @@ C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\Microsoft.
 C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.deps.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.runtimeconfig.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\appsettings.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.staticwebassets.runtime.json
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.exe
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\OpenAI_API.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterBLL.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.dll
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterCreator.pdb
+C:\Users\Huijb\OneDrive\Bureaublad\Encounter\Testing\bin\Debug\net6.0\EncounterBLL.pdb

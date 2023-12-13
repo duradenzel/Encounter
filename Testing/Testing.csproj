@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EncounterDAL\EncounterDAL.csproj" />
+    <ProjectReference Include="..\EncounterCreator\EncounterCreator.csproj" />
   </ItemGroup>
 
 </Project>

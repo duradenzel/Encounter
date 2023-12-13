@@ -11,14 +11,16 @@ namespace EncounterDAL
 {
     public class EncounterRespository : IEncounterRepository
     {
-
-        private readonly string conString = "Server=localhost;User ID=root;Password='';Database=encounter_creator";
+        private readonly string _dbConString;
+        public EncounterRespository(string dbConString){
+            _dbConString = dbConString;
+        }
 
         public async Task<bool> SaveEncounter(EncounterResult encounterResult)
         {
             try
             {
-                using (MySqlConnection con = new MySqlConnection(conString))
+                using (MySqlConnection con = new MySqlConnection(_dbConString))
                 {
                     await con.OpenAsync();
 

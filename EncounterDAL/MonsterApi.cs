@@ -1,5 +1,6 @@
 ﻿using EncounterModels;
 using Newtonsoft.Json;
+using System.Net.Http;
 using System.Net.Http.Headers;
 using EncounterInterfaces;
 using Microsoft.Extensions.Caching.Memory;
@@ -14,8 +15,10 @@ namespace EncounterDAL
         private readonly string baseUrl = "https://api.open5e.com/monsters/?limit=500";
         private readonly IMemoryCache memoryCache;
 
+
+
         public MonsterApi(IMemoryCache memoryCache)
-        {    
+        {              
             this.memoryCache = memoryCache;
         }
 
@@ -46,7 +49,7 @@ namespace EncounterDAL
             return null;
         }
 
-        public async Task<List<Monster>> GetMonsterList(HttpClient _httpclient)
+        public async Task<List<Monster>> GetMonsterList(HttpClient _httpClient)
         {
 
             if (memoryCache.TryGetValue("AllMonsters", out List<Monster> allMonsters))
@@ -54,7 +57,7 @@ namespace EncounterDAL
                 return allMonsters;
             }
 
-            HttpResponseMessage response = await _httpclient.GetAsync(baseUrl);
+            HttpResponseMessage response = await _httpClient.GetAsync(baseUrl);
             if (response.IsSuccessStatusCode)
             {
                 string jsondata = await response.Content.ReadAsStringAsync();

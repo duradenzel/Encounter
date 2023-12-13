@@ -10,8 +10,8 @@ namespace EncounterInterfaces
 {
     public interface IMonsterApiService
     {
-        Task<List<Monster>> GetMonsters(int desiredXpValue, HttpClient httpClient);
-        Task<List<Monster>> GetMonsterList(HttpClient httpClient);
+        Task<List<Monster>> GetMonsters(int desiredXpValue, HttpClient _httpClient);
+        Task<List<Monster>> GetMonsterList(HttpClient _httpClient);
 
     }
 }

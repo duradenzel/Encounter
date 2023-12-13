@@ -1,3 +1,5 @@
+using System.Configuration;
+using System.Configuration.Internal;
 using EncounterDAL;
 using EncounterInterfaces;
 using EncounterModels;
@@ -9,11 +11,12 @@ namespace Testing;
 public class DatabaseTests
 {
     private readonly IEncounterRepository _encounterRepository;
+    private readonly string conString = "Server=localhost;User ID=root;Password='';Database=encounter_creator";
 
 
     public DatabaseTests()
     {
-        _encounterRepository = new EncounterRespository();
+        _encounterRepository = new EncounterRespository(conString);
     }
 
     [TestMethod]

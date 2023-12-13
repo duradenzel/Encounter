@@ -5,26 +5,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Configuration;
 
 namespace EncounterBLL.Factories
 {
     public class DataAccessFactory
     {
         private readonly IMemoryCache _memoryCache;
+        private readonly IConfiguration _configuration;
 
-        public DataAccessFactory(IMemoryCache memoryCache){
+        public DataAccessFactory(IMemoryCache memoryCache, IConfiguration configuration){
+            
             _memoryCache = memoryCache;
+            _configuration = configuration;
+          
+           
         }
 
         public IMonsterApiService GetAPI()
         {
-            MonsterApi monsterApi = new(_memoryCache);
+            MonsterApi monsterApi = new MonsterApi(_memoryCache);
             return monsterApi;
         }
 
         public IEncounterRepository GetEncounterRepository(){
-            EncounterRespository encounterRespository = new();
+            string conString = _configuration.GetConnectionString("Database");
+            EncounterRespository encounterRespository = new(conString);
             return encounterRespository;
         }
     }

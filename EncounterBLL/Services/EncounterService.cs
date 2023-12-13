@@ -3,24 +3,26 @@ using EncounterBLL;
 using EncounterInterfaces;
 using EncounterModels;
 using EncounterBLL.Factories;
+using MySqlX.XDevAPI;
 
 public class EncounterService
 {
     private readonly DataAccessFactory _dataAccessFactory;
     private readonly IMonsterApiService _monsterApiService;
+    private readonly IHttpClientFactory _clientFactory;
 
     private readonly IEncounterRepository _encounterRepository;
-private readonly HttpClient _httpClient;
     
-    public EncounterService(DataAccessFactory dataAccessFactory, HttpClient httpClient)
+    
+    public EncounterService(DataAccessFactory dataAccessFactory, IHttpClientFactory clientFactory)
     {
-        _httpClient = httpClient;
+        _clientFactory = clientFactory;
         _dataAccessFactory = dataAccessFactory;
         _monsterApiService = _dataAccessFactory.GetAPI();
         _encounterRepository = _dataAccessFactory.GetEncounterRepository();
     }
 
-    public async Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty, HttpClient _httpClient)
+    public async Task<EncounterResult> GenerateEncounter(int partySize, int playerLevel, string difficulty)
     {
         int[] playerLevels = Enumerable.Repeat(playerLevel, partySize).ToArray();
 
@@ -47,21 +49,26 @@ private readonly HttpClient _httpClient;
 
         Dictionary<string, int> xpSums = CalculateAllXpSums(xpThresholds);
 
-
-        List<Monster> selectedMonsters = await _monsterApiService.GetMonsters(desiredXpValue, _httpClient);
-
-        int adjustedXpValue = CalculateAdjustedXpValue(selectedMonsters.Sum(monster => monster.ExperiencePoints), selectedMonsters.Count);
-
-
-        EncounterResult result = new EncounterResult
+        
+       using (HttpClient _client = _clientFactory.CreateClient())
         {
-            Monsters = selectedMonsters,
-            Difficulty = difficulty,
-            TotalExp = selectedMonsters.Sum(monster => monster.ExperiencePoints),
-            XpSums = xpSums,
-            AdjustedExp = adjustedXpValue
-        };
+            List<Monster> selectedMonsters = await _monsterApiService.GetMonsters(desiredXpValue, _client);
+             int adjustedXpValue = CalculateAdjustedXpValue(selectedMonsters.Sum(monster => monster.ExperiencePoints), selectedMonsters.Count);
+
+
+            EncounterResult result = new EncounterResult
+            {
+                Monsters = selectedMonsters,
+                Difficulty = difficulty,
+                TotalExp = selectedMonsters.Sum(monster => monster.ExperiencePoints),
+                XpSums = xpSums,
+                AdjustedExp = adjustedXpValue
+            };
         return result;
+        }
+        
+
+       
     }
 
 
@@ -170,10 +177,14 @@ private readonly HttpClient _httpClient;
     }
 
 
-    public async Task<List<Monster>> GetMonsterList(HttpClient _httpClient)
+    public async Task<List<Monster>> GetMonsterList()
     {
-        List<Monster> monsterList = await _monsterApiService.GetMonsterList(_httpClient);
-        return monsterList;
+        using (HttpClient _client = _clientFactory.CreateClient())
+        {
+            List<Monster> monsterList = await _monsterApiService.GetMonsterList(_client);
+            return monsterList;
+        }
+  
     }
 
      public async Task<bool> SaveEncounterData(EncounterResult encounterResult)
