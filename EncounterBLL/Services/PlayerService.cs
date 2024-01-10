@@ -6,13 +6,17 @@ using MySqlX.XDevAPI;
 
 public class PlayerService
 {
+    private readonly DataAccessFactory _dataAccessFactory;
+    private readonly IPlayerRepository _playerRepository;
 
-     private readonly DataAccessFactory _dataAccessFactory;
-     private readonly IPlayerRepository _playerRepository;
-
-      public PlayerService(DataAccessFactory dataAccessFactory)
+    public PlayerService(DataAccessFactory dataAccessFactory)
     {
         _dataAccessFactory = dataAccessFactory;
         _playerRepository = _dataAccessFactory.GetPlayerRepository();
+    }
+
+    public List<Player> GetAllPlayers(){
+        List<Player> players = _playerRepository.GetAllPlayers();
+        return players;
     }
 }

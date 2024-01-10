@@ -68,7 +68,17 @@
                 <button id="next-page">Next &rarr;</button>
             </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+        
+            <select id="playerSelect">
+            <option disabled value="">Select Player</option>
+                @foreach (var player in Model?.Players)
+                {
+                    <option value="@player.Id">@player?.Username</option>
+                }
+            </select>
+
+        </div>
 
     </div>
     

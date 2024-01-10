@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace EncounterInterfaces
 {
     public interface IPlayerRepository
-    {
-         
+    {     
+       List<Player> GetAllPlayers();
 
     }
 }

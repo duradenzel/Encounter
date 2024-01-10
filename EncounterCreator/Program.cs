@@ -13,6 +13,7 @@ builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<DataAccessFactory>();
 builder.Services.AddScoped<EncounterService>();
+builder.Services.AddScoped<PlayerService>();
 builder.Services.AddScoped<IMonsterApiService, MonsterApi>();
 
 

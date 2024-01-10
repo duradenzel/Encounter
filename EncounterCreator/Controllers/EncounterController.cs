@@ -11,25 +11,37 @@ namespace EncounterCreator.Controllers
     public class EncounterController : Controller
     {
         private readonly EncounterService _encounterService;
+        private readonly PlayerService _playerService;
+
+        private PlayerViewModel playerViewModel;
         
 
 
-        public EncounterController(EncounterService encounterService)
+        public EncounterController(EncounterService encounterService, PlayerService playerService)
         {
             
             _encounterService = encounterService;
+            _playerService = playerService;
+            playerViewModel = new PlayerViewModel();
         
         }
 
-        public IActionResult Index() { return View("GenerateEncounter"); }
+        public IActionResult Index() { 
+
+
+            playerViewModel.Players = _playerService.GetAllPlayers();
+            return View("GenerateEncounter", playerViewModel); 
+        }
 
         [HttpPost]
         public async Task<IActionResult> GenerateEncounter(int partySize, int playerLevel, string difficulty)
         {
 
             EncounterResult Encounter = await _encounterService.GenerateEncounter(partySize, playerLevel, difficulty);
-            
-            return View("GenerateEncounter",Encounter);
+            playerViewModel.Encounter = Encounter;
+            playerViewModel.Players = _playerService.GetAllPlayers();
+
+            return View("GenerateEncounter", playerViewModel);
 
         }
 

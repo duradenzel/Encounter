@@ -1,0 +1,9 @@
+@model List<EncounterModels.Player>
+
+<select id="playerSelect">
+    <option value="">Select Player</option>
+    @foreach (var player in Model)
+    {
+        <option value="@player.Id">@player.Username</option>
+    }
+</select>
