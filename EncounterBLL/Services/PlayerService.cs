@@ -19,4 +19,9 @@ public class PlayerService
         List<Player> players = _playerRepository.GetAllPlayers();
         return players;
     }
+
+    public List<EncounterResult> GetEncountersByPlayerId(int id){
+        List<EncounterResult> encounters = _playerRepository.GetEncountersByPlayerId(id);
+        return encounters;
+    }
 }

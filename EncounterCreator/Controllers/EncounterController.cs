@@ -30,6 +30,8 @@ namespace EncounterCreator.Controllers
 
 
             playerViewModel.Players = _playerService.GetAllPlayers();
+            playerViewModel.PlayerEncounters = _playerService.GetEncountersByPlayerId(1);
+
             return View("GenerateEncounter", playerViewModel); 
         }
 
@@ -40,6 +42,7 @@ namespace EncounterCreator.Controllers
             EncounterResult Encounter = await _encounterService.GenerateEncounter(partySize, playerLevel, difficulty);
             playerViewModel.Encounter = Encounter;
             playerViewModel.Players = _playerService.GetAllPlayers();
+            playerViewModel.PlayerEncounters = _playerService.GetEncountersByPlayerId(1);
 
             return View("GenerateEncounter", playerViewModel);
 

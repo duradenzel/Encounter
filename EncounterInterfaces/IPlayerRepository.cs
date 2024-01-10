@@ -10,7 +10,8 @@ namespace EncounterInterfaces
 {
     public interface IPlayerRepository
     {     
-       List<Player> GetAllPlayers();
+        List<Player> GetAllPlayers();
+        List<EncounterResult> GetEncountersByPlayerId(int id);
 
     }
 }

@@ -78,6 +78,12 @@
                 }
             </select>
 
+            <ul>
+                @foreach (var encounter in Model?.PlayerEncounters){
+                    <li>@encounter?.Id</li>
+                }
+            </ul>
+
         </div>
 
     </div>

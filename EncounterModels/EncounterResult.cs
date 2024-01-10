@@ -8,6 +8,7 @@ namespace EncounterModels
 {
     public class EncounterResult
     {
+        public int Id {get; set; }
         public List<Monster> Monsters { get; set; }
         public string Difficulty { get; set; }
 
