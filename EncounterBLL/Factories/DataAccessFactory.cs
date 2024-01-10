@@ -35,5 +35,11 @@ namespace EncounterBLL.Factories
             EncounterRespository encounterRespository = new(conString);
             return encounterRespository;
         }
+
+        public IPlayerRepository GetPlayerRepository(){
+            string conString = _configuration.GetConnectionString("Database");
+            PlayerRepository playerRepository = new(conString);
+            return playerRepository;
+        }
     }
 }
