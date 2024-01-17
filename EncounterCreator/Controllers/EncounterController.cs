@@ -71,14 +71,17 @@ namespace EncounterCreator.Controllers
             }
         }
 
-        public async Task<IActionResult> GetEncounter(int id = 11){
+        public async Task<IActionResult> GetEncounter(int id = 14){
 
-            EncounterResult encounter = _playerService.GetEncounter(11);
+            EncounterResult encounter = _playerService.GetEncounter(14);
+            encounter.XpSums = _encounterService.CalculateAllXpSums(_encounterService.CalculatePartyXpThresholds(encounter.PlayerLevels, encounter.Difficulty));
             playerViewModel.Encounter = encounter;
+
+            
             playerViewModel.Players = _playerService.GetAllPlayers();
             playerViewModel.PlayerEncounters = _playerService.GetEncountersByPlayerId(1);
 
-            return PartialView("_EncounterDetails", playerViewModel);
+            return View("GenerateEncounter", playerViewModel);
         }
 
     }

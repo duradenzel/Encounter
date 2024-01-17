@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {}
+    "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
+    "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
+        "projectUniqueName": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
         "projectName": "EncounterModels",
-        "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
+        "projectPath": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj",
         "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\obj\\",
+        "outputPath": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",

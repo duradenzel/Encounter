@@ -59,6 +59,7 @@ public class EncounterService
             EncounterResult result = new EncounterResult
             {
                 Monsters = selectedMonsters,
+                PlayerLevels = playerLevels,
                 Difficulty = difficulty,
                 TotalExp = selectedMonsters.Sum(monster => monster.ExperiencePoints),
                 XpSums = xpSums,
@@ -72,7 +73,7 @@ public class EncounterService
     }
 
 
-    private Dictionary<string, int> CalculateAllXpSums(List<XpThresholds> xpThresholds)
+    public Dictionary<string, int> CalculateAllXpSums(List<XpThresholds> xpThresholds)
     {
         Dictionary<string, int> xpSums = new Dictionary<string, int>
     {
@@ -85,7 +86,7 @@ public class EncounterService
         return xpSums;
     }
 
-    private List<XpThresholds> CalculatePartyXpThresholds(int[] playerLevels, string difficulty)
+    public List<XpThresholds> CalculatePartyXpThresholds(int[] playerLevels, string difficulty)
     {
         var xpThresholds = new List<XpThresholds>();
 

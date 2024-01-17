@@ -49,6 +49,7 @@ function SaveEncounter() {
         var monsterType = monsterSizeType[1];
         var monsterCR = $(this).find('.monster-cr-exp #monster-cr').text();
         var monsterExp = $(this).find('.monster-cr-exp #monster-exp').text();
+        
 
         var monsterQuantity = parseInt($(this).find('.quantity-input').val()) || 1;
 
@@ -63,9 +64,17 @@ function SaveEncounter() {
             monsters.push(monster);
         }
     });
+    var partySize = parseInt($('#encounter-psize').text()) || 1;
+    var playerLevel = parseInt($('#encounter-plevel').text()) || 1; 
+    var playerLevels = generatePlayerLevels(partySize, playerLevel);
+    function generatePlayerLevels(partySize, playerLevel) {
+        console.log(Array.from({ length: partySize }, () => playerLevel))
+        return Array.from({ length: partySize }, () => playerLevel);
+    }
 
     var encounterData = {
         Monsters: monsters,
+        PlayerLevels: playerLevels,
         Difficulty: $('#encounter-difficulty').text(), 
         TotalExp: parseInt($('#exp-total').text()) || 0,
         AdjustedExp: parseInt($('#exp-adjusted').text()) || 0,

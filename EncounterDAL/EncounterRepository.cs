@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EncounterModels;
 using EncounterInterfaces;
 using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 
 namespace EncounterDAL
 {
@@ -29,8 +30,8 @@ namespace EncounterDAL
                         try
                         {
                         
-                            string encounterQuery = "INSERT INTO encounter (Name, Difficulty, ExpReward, PlayerId) " +
-                                                    "VALUES (@name, @difficulty, @expReward, @playerId)";
+                            string encounterQuery = "INSERT INTO encounter (Name, PlayerLevels, Difficulty, ExpReward, PlayerId) " +
+                                                    "VALUES (@name, @playerLevels, @difficulty, @expReward, @playerId)";
 
                             long lastInsertedEncounterId;
                             using (MySqlCommand encounterCommand = new MySqlCommand(encounterQuery, con))
@@ -38,6 +39,7 @@ namespace EncounterDAL
                                 encounterCommand.Transaction = transaction;
 
                                 encounterCommand.Parameters.AddWithValue("@name", "Placeholder Name");
+                                encounterCommand.Parameters.AddWithValue("@playerLevels", JsonConvert.SerializeObject(encounterResult.PlayerLevels));
                                 encounterCommand.Parameters.AddWithValue("@difficulty", encounterResult.Difficulty);
                                 encounterCommand.Parameters.AddWithValue("@expReward", encounterResult.AdjustedExp);
                                 encounterCommand.Parameters.AddWithValue("@playerId", 1);

@@ -1969,11 +1969,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
+      "projectUniqueName": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
       "projectName": "EncounterDAL",
-      "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
+      "projectPath": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\EncounterDAL.csproj",
       "packagesPath": "C:\\Users\\Huijb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\obj\\",
+      "outputPath": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterDAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Huijb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1993,8 +1993,8 @@
             "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj": {
               "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterInterfaces\\EncounterInterfaces.csproj"
             },
-            "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
-              "projectPath": "C:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj"
+            "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj": {
+              "projectPath": "c:\\Users\\Huijb\\OneDrive\\Bureaublad\\Encounter\\EncounterModels\\EncounterModels.csproj"
             }
           }
         }

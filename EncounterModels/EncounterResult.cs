@@ -10,6 +10,8 @@ namespace EncounterModels
     {
         public int Id {get; set; }
         public List<Monster> Monsters { get; set; }
+
+        public int[] PlayerLevels { get; set; }
         public string Difficulty { get; set; }
 
         public int TotalExp { get; set; }

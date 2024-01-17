@@ -5,8 +5,17 @@
     var monsterQuantities = new Dictionary<string, int>();
 
     <div class="encounter-summary">
-        <h1>Chosen Difficulty: <span id="encounter-difficulty">@Model?.Encounter?.Difficulty</span></h1>
-        <h2>EXP Goals</h2>
+        <h2>Chosen Difficulty: <span id="encounter-difficulty">@Model?.Encounter?.Difficulty</span></h2>
+        <div class="d-flex">
+
+        <h2>Party Size: <span id="encounter-psize">@Model?.Encounter?.PlayerLevels.Length</span></h2>
+        </div>
+        <div>
+
+        <h2>Party Level: <span id="encounter-plevel">@Model?.Encounter?.PlayerLevels[0]</span></h2>
+        </div>
+
+        <h3>EXP Goals</h3>
         <ul class="encounter-exp">
             @foreach (var xpSum in Model?.Encounter?.XpSums)
             {

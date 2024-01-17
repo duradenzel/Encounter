@@ -1,6 +1,8 @@
 using EncounterModels;
 using EncounterInterfaces;
 using MySql.Data.MySqlClient;
+using System.Text.Json.Nodes;
+using Newtonsoft.Json;
 
 namespace EncounterDAL
 {
@@ -61,6 +63,8 @@ namespace EncounterDAL
                             EncounterResult encounter = new EncounterResult
                             {
                                Id = Convert.ToInt32(reader["Id"]),
+                                PlayerLevels = JsonConvert.DeserializeObject<int[]>(reader["PlayerLevels"].ToString()),
+
                                Difficulty = reader["Difficulty"].ToString(),
                                AdjustedExp = Convert.ToInt32(reader["ExpReward"]),
                                
@@ -95,9 +99,10 @@ namespace EncounterDAL
                         encounter = new EncounterResult
                         {
                             Id = Convert.ToInt32(encounterReader["Id"]),
+                            PlayerLevels = JsonConvert.DeserializeObject<int[]>(encounterReader["PlayerLevels"].ToString()),
                             Difficulty = encounterReader["Difficulty"].ToString(),
                             AdjustedExp = Convert.ToInt32(encounterReader["ExpReward"]),
-                            Monsters = new List<Monster>() // Initialize the Monsters property
+                            Monsters = new List<Monster>() 
                         };
                     }
                 }
