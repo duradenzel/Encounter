@@ -75,6 +75,66 @@ namespace EncounterDAL
             return encounters;
         }
 
+         public EncounterResult GetEncounter(int id)
+        {
+        EncounterResult encounter = new EncounterResult();
+        using (MySqlConnection con = new MySqlConnection(_dbConString))
+        {
+            con.Open();
+
+            // Fetch encounter details
+            string encounterQuery = "SELECT * FROM encounter WHERE Id = @id";
+            using (MySqlCommand encounterComm = new MySqlCommand(encounterQuery, con))
+            {
+                encounterComm.Parameters.AddWithValue("@id", id);
+
+                using (MySqlDataReader encounterReader = encounterComm.ExecuteReader())
+                {
+                    while (encounterReader.Read())
+                    {
+                        encounter = new EncounterResult
+                        {
+                            Id = Convert.ToInt32(encounterReader["Id"]),
+                            Difficulty = encounterReader["Difficulty"].ToString(),
+                            AdjustedExp = Convert.ToInt32(encounterReader["ExpReward"]),
+                            Monsters = new List<Monster>() // Initialize the Monsters property
+                        };
+                    }
+                }
+            }
+
+            // Fetch associated monsters
+            string monsterQuery = "SELECT m.* FROM monster m " +
+                                    "JOIN encounter_monster em ON m.Id = em.MonsterId " +
+                                    "WHERE em.EncounterId = @id";
+
+            using (MySqlCommand monsterComm = new MySqlCommand(monsterQuery, con))
+            {
+                monsterComm.Parameters.AddWithValue("@id", id);
+
+                using (MySqlDataReader monsterReader = monsterComm.ExecuteReader())
+                {
+                    while (monsterReader.Read())
+                    {
+                        Monster monster = new Monster
+                        {
+                            
+                            Name = monsterReader["Name"].ToString(),
+                            CR = Convert.ToDouble(monsterReader["CR"]),
+                            Size = monsterReader["Size"].ToString()
+                        };
+
+                        encounter.Monsters.Add(monster);
+                    }
+                }
+            }
+        }
+
+        return encounter;
+        }
+
+
+
     }
     
 }

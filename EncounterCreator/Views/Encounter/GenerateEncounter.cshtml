@@ -84,6 +84,14 @@
                 }
             </ul>
 
+            <form method="get" action="@Url.Action("GetEncounter", "Encounter")">
+            <select id="encounter-ids" name="encounterid" onchange="this.form.submit()">
+                @foreach (var encounter in Model?.PlayerEncounters){
+                    <option>@encounter?.Id</option>
+                }   
+            </select>
+            </form>
+
         </div>
 
     </div>

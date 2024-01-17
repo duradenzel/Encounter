@@ -12,6 +12,8 @@ namespace EncounterInterfaces
     {     
         List<Player> GetAllPlayers();
         List<EncounterResult> GetEncountersByPlayerId(int id);
+         EncounterResult GetEncounter(int id);
+
 
     }
 }
